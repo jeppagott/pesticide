@@ -1,0 +1,31 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	blicky: {
+		DisplayName: blicky
+		Tooltip:
+			'''
+			Template of an item
+			Replacing this tooltip is duty 
+			It's snowing on Mt.Fuji
+			'''
+	}
+
+	bladeofyeetz: {
+		DisplayName: bladeofyeetz
+		Tooltip: ""
+	}
+}
+
+NPCs: {
+	Exol.DisplayName: Exol
+	Pesticide.DisplayName: Pesticide
+}
+
+Projectiles: {
+	phfire.DisplayName: phfire
+	homingfire.DisplayName: homingfire
+	EBoulder.DisplayName: E Boulder
+	boulderfire.DisplayName: boulderfire
+	bladeofyeetzswing.DisplayName: bladeofyeetzswing
+}
