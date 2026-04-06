@@ -1,16 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
 	<!-- Import tModLoader mod properties -->
 	<Import Project="..\tModLoader.targets" />
 
 	<!-- General -->
 	<PropertyGroup>
-		
+		<DotNetName Condition="'$(OS)' == 'Unix'">dotnet/dotnet</DotNetName>
+		<LangVersion>preview</LangVersion>
 	</PropertyGroup>
+	
 	<ItemGroup>
-	  <Folder Include="Assets\Sounds\" />
+		<PackageReference Include="Krafs.Publicizer" PrivateAssets="true" Version="2.2.1"/>
+		<Publicize Include="tModLoader;ReLogic;FNA" IncludeVirtualMembers="false" IncludeCompilerGeneratedMembers="false" />
 	</ItemGroup>
-
-	<!-- References -->
-
 </Project>
