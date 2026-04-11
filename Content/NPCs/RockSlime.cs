@@ -29,6 +29,7 @@ public class RockSlime : ModNPC
         Vector2 targetPosition = player.Center - new Vector2(0, 80);
         NPC.ai[1]++;
         NPC.ai[2]++;
+        NPC.noGravity = false;
         if (!Collision.CanHitLine(NPC.Bottom, 1, 1, NPC.Center + NPC.velocity, 1, 1))
         {
             NPC.velocity.X *= 0.85f;
