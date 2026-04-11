@@ -20,6 +20,7 @@ Items: {
 NPCs: {
 	Exol.DisplayName: Exol
 	Pesticide.DisplayName: Pesticide
+	RockSlime.DisplayName: Rock Slime
 }
 
 Projectiles: {
