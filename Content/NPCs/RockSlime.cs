@@ -46,6 +46,7 @@ public class RockSlime : ModNPC
 
         if (NPC.ai[0] == 0)
         {
+            NPC.noGravity = false;
             if (NPC.ai[2] % 150 == 0)
             {
                 NPC.velocity.Y += -6.5f;
@@ -64,6 +65,7 @@ public class RockSlime : ModNPC
         
         if (NPC.ai[0] == 1 && NPC.HasValidTarget)
         {
+            NPC.noGravity = false;
             if (NPC.ai[1] >= 100 && NPC.ai[1] <= 140)
             {
                 NPC.velocity = (targetPosition - NPC.Center) * 0.08f;
@@ -71,13 +73,14 @@ public class RockSlime : ModNPC
 
             if (NPC.ai[1] >= 140 && NPC.ai[1] <= 180)
             {
-                NPC.gravity = 0;
+                NPC.noGravity = true;
                 NPC.velocity.X = 0;
                 NPC.velocity.Y = 0;
             }
 
             if (NPC.ai[1] >= 180 && NPC.ai[1] <= 200)
-            { 
+            {
+                NPC.noGravity = false;
                 NPC.velocity.X = 0;
                 NPC.velocity.Y += 1f;
             }
