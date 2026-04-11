@@ -4,7 +4,6 @@
 
 	<!-- General -->
 	<PropertyGroup>
-		<DotNetName Condition="'$(OS)' == 'Unix'">dotnet/dotnet</DotNetName>
 		<LangVersion>preview</LangVersion>
 	</PropertyGroup>
 	
