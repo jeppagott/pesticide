@@ -34,6 +34,10 @@ public class phfire : ModProjectile
         base.AI();
         Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver2;
         Projectile.ai[1]++;
+        for (int i = 0; i < 2; i++)
+        {
+            Dust.NewDustDirect(Projectile.position, Projectile.width, Projectile.height, DustID.Torch, Projectile.velocity.X * -0.8f, Projectile.velocity.Y * -0.8f, Scale: 1.2f).noGravity = true;
+        }
         if (Projectile.ai[1] >= 10)
         {
             Projectile.velocity.Y += 0.08f;
@@ -41,10 +45,6 @@ public class phfire : ModProjectile
             {
                 Projectile.velocity.Y += 0.13f;
             }
-        }
-        for (int i = 0; i < 2; i++)
-        {
-            Dust.NewDustDirect(Projectile.position, Projectile.width, Projectile.height, DustID.Torch, Projectile.velocity.X * -0.8f, Projectile.velocity.Y * -0.8f, Scale: 1.2f).noGravity = true;
         }
     }
 

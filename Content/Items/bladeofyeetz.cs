@@ -8,8 +8,6 @@ namespace yeetz.Content.Items;
 
 public class bladeofyeetz : ModItem
 {
-    public override string Texture => "Terraria/Images/Item_" + ItemID.Excalibur;
-
     public override void SetDefaults()
     {
         Item.damage = 10;

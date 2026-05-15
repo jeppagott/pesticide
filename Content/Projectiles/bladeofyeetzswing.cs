@@ -12,7 +12,7 @@ namespace yeetz.Content.Projectiles;
 public class bladeofyeetzswing : ModProjectile
 {
     public override bool ShouldUpdatePosition() => false;
-    public override string Texture => "Terraria/Images/Item_" + ItemID.Excalibur;
+    public override string Texture => "yeetz/Content/Items/bladeofyeetz";
     public override void SetDefaults()
     {
         Projectile.aiStyle = -1;
