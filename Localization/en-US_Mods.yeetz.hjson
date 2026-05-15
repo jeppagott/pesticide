@@ -21,6 +21,7 @@ NPCs: {
 	Exol.DisplayName: Exol
 	Pesticide.DisplayName: Pesticide
 	RockSlime.DisplayName: Rock Slime
+	Stinkshroom.DisplayName: Stinkshroom
 }
 
 Projectiles: {
@@ -29,4 +30,5 @@ Projectiles: {
 	EBoulder.DisplayName: E Boulder
 	boulderfire.DisplayName: boulderfire
 	bladeofyeetzswing.DisplayName: bladeofyeetzswing
+	stinkcloud.DisplayName: stinkcloud
 }
